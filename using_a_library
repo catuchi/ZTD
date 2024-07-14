@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# To use the functions of a library in your script, you have to source the library file
+
+source string_utils.sh
+
+trimmed_string=$(trim "    Hello, World!    ")
+echo $trimmed_string
+
+uppercase_string=$(uppercase "Hello, World!")
+echo $uppercase_string

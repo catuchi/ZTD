@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# function_name() {
+# 	# code to execute
+# }
+
+echo "What is your name?"
+read name
+
+greet() {
+	echo "Hello, $name!"
+}
+
+greet
+
+# To execute a function, simply use its name followed by any argument:
+# e.g: hello "World"
+
+: <<'END_COMMENT'
+hello() {
+	echo "Hello, $1!"
+}
+
+hello "World"
+END_COMMENT
