@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# case statements allows for multi-way branching
+# useful for handling different values of a single variable
+
+# syntax
+# case $variable in
+# 	pattern1)
+# 	# commands for pattern1
+# 	;;
+# 	pattern2)
+#	# commands for pattern2
+#	;;
+#     *)
+#	# default commands
+#	;;
+# esac
+
+echo "What is your favourite fruit"
+read fruit
+
+case $fruit in
+	apple)
+		echo "Apples are tasty!"
+		;;
+	banana)
+		echo "Bananas are cool for smoothies"
+		;;
+	orange)
+		echo "Oranges make delicious juices"
+		;;
+	watermelon)
+		echo "Watermelons are refreshing"
+		;;
+	*)
+		echo "I don't know much about $fruit."
+		;;
+esac

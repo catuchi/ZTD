@@ -1,0 +1,11 @@
+#!/bin/bash
+
+age=15
+
+if [ "$age" -lt 18 ]; then
+    echo "Access Denied - Must be 18 and above"
+elif [ "$age" -ge 18 ]; then
+    echo "Access Granted - Welcome!"
+else
+    echo "Please enter a valid age"
+fi
