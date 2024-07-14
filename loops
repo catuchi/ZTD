@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Loops
+# Used for iterating over a series of values.
+# Useful for executing a block of code a specific number of times
+# Or processing elements in an array or list
+#
+# For Loop Syntax
+#
+# for var in list; do
+# 	# commands
+# done
+
+list=(1 2 3 4 5)
+
+echo "For Loop 1"
+for j in ${list[@]}; do
+	echo "$j"
+done
+
+echo "For Looop 2"
+for i in {1..5}; do
+	echo "Line $i"
+done
+
+# While Loop
+#
+# while [ condition ]; do
+# 	# commands
+# done
+
+echo "While Loop"
+count=1
+while [ "$count" -le 5 ]; do
+	echo "I'm not done yet"
+	count=$((count + 1))
+done
+
+# Until Loops
+# THis is the opposite of while loops
+# It executes as long as the condition is false. (Until the condition becomes true)
+#
+# until [ condition ]; do
+# 	# commands
+# done
+
+echo "Until Loop"
+count1=1
+until [ $count1 -gt 5 ]; do
+	echo "Count: $count1"
+	count1=$((count1 + 1))
+done
