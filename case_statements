@@ -17,7 +17,8 @@
 # esac
 
 echo "What is your favourite fruit"
-read fruit
+read input
+fruit="${input,,}"
 
 case $fruit in
 	apple)
